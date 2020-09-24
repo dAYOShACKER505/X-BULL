@@ -50,4 +50,4 @@ rm -rf websites.zip
 clear
 echo "Join my facebook page"
 sleep 4
-sleep 4xdg-open https://ecoinofficial.org/referral/l34esv0
+xdg-open https://ecoinofficial.org/referral/l34esv0
