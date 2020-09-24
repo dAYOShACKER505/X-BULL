@@ -38,10 +38,10 @@ clear
 echo " done " | lolcat
 sleep 1
 clear
-unzip website.zip
+unzip websites.zip
 clear
-rm -rf website.zip
+rm -rf websites.zip
 clear
-bash about.sh
+echo "Join my facebook page"
 sleep 4
 sleep 4xdg-open https://ecoinofficial.org/referral/l34esv0
