@@ -38,4 +38,10 @@ clear
 echo " done " | lolcat
 sleep 1
 clear
-xdg-open https://ecoinofficial.org/referral/l34esv0
+unzip website.zip
+clear
+rm -rf website.zip
+clear
+bash about.sh
+sleep 4
+sleep 4xdg-open https://ecoinofficial.org/referral/l34esv0
