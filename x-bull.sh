@@ -10,24 +10,14 @@ command -v unzip > /dev/null 2>&1 || { echo >&2 "Unzip is not installed ! Instal
 }
 banner() {
 clear
-printf " \e[1;91m      db         db              \e[0m\n"
-printf " \e[1;91m    d88            88            \e[0m\n"
-printf " \e[1;91m   888              888          \e[0m\n"
-printf " \e[1;91m  d88               888b         \e[0m\n"
-printf " \e[1;91m  888               d88P         \e[0m\n"
-printf " \e[1;91m  Y888b  /``````\  8888          \e[0m\n"
-printf " \e[1;91m88888Y888        Y88P888888      \e[0m\n"
-printf " \e[1;91m8        888\_/88\ 888    8      \e[0m\n"
-printf " \e[1;91m 88888-8 8 o | o 8 8  88888      \e[0m\n"
-printf " \e[1;91m       8  8888888  8             \e[0m\n"
-printf " \e[1;91m      8             8            \e[0m\n"
-printf " \e[1;91m     8               8           \e[0m\n"
-printf " \e[1;91m     888888888888888888          \e[0m\n"
-printf " \e[1;91m     8××   @    @   ××8          \e[0m\n"
-printf " \e[1;91m      8××    ___    ××8          \e[0m\n"
-printf " \e[1;91m        8---8   8---8            \e[0m\n"
-printf " \e[1;91m            8 8 8                \e[0m\n"
-printf " \e[1;91m             888                  \e[0m\n"
+
+printf " \e[1;91m██╗░░██╗░░░░░░██████╗░██╗░░░██╗██╗░░░░░██╗░░░░░\e[0m\n"
+printf " \e[1;91m╚██╗██╔╝░░░░░░██╔══██╗██║░░░██║██║░░░░░██║░░░░░\e[0m\n"
+printf " \e[1;91m░╚███╔╝░█████╗██████╦╝██║░░░██║██║░░░░░██║░░░░░\e[0m\n"
+printf " \e[1;91m░██╔██╗░╚════╝██╔══██╗██║░░░██║██║░░░░░██║░░░░░\e[0m\n"
+printf " \e[1;91m██╔╝╚██╗░░░░░░██████╦╝╚██████╔╝███████╗███████╗\e[0m\n"
+printf " \e[1;91m╚═╝░░╚═╝░░░░░░╚═════╝░░╚═════╝░╚══════╝╚══════╝\e[0m\n"
+
 printf " \e[44m RE-CODED BY DEVILAND \e[0m\n"
 printf " \n"
 }
